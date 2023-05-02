@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <group
+        android:checkableBehavior="single"
+        android:enabled="true"
+        android:visible="true">
+        <item
+
+            android:id="@+id/home_select_frag"
+
+
+            android:icon="@drawable/home_icon"
+            android:title="HOME" />
+
+        <item
+
+            android:id="@+id/ssh_select_frag"
+
+
+            android:icon="@drawable/connection"
+            android:title="CONNECTION" />
+
+        <item
+
+            android:id="@+id/host_select_frag"
+
+
+            android:enabled="true"
+            android:icon="@drawable/hosticon"
+            android:title="HOSTS"
+            android:visible="true" />
+
+        <item
+
+            android:id="@+id/usage_select_frag"
+
+
+            android:icon="@drawable/usage_icon"
+            android:title="USAGE" />
+        <item
+            android:checkable="true"
+            android:enabled="true"
+            android:title="ADVANCED"
+            android:visible="true">
+
+            <menu>
+
+                <group
+                    android:checkableBehavior="single"
+                    android:enabled="true"
+                    android:visible="true">
+
+                    <item
+
+                        android:id="@+id/control_panel_select_frag"
+
+                        android:icon="@drawable/control_panel"
+                        android:title="Control panel" />
+
+
+                    <item
+
+                        android:id="@+id/power_select_frag"
+                        android:icon="@drawable/power_bulb"
+                        android:title="POWER" />
+
+                </group>
+
+            </menu>
+
+        </item>
+
+    </group>
+
+</menu>

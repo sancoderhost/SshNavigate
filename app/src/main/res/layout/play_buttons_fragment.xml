@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Ssh_conection_fragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ImageButton
+        android:id="@+id/play_song"
+        android:layout_width="119dp"
+        android:layout_height="137dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="103dp"
+        android:layout_marginBottom="581dp"
+        android:background="#007E6464"
+        android:src="@drawable/vlc_icon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/windows"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/windows"
+        android:layout_width="148dp"
+        android:layout_height="134dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="#00FFFFFF"
+        android:src="@drawable/vm_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Open vlc \n (plays default playlist)"
+        android:textAlignment="center"
+        android:textColor="#F5905F"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/play_song" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="95dp"
+        android:layout_marginEnd="27dp"
+        android:text="start virtual machine \n(boots windows ) "
+        android:textAlignment="center"
+        android:textColor="#515D7A"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView11"
+        app:layout_constraintTop_toBottomOf="@+id/windows" />
+
+    <EditText
+        android:id="@+id/runcommand"
+        android:layout_width="324dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="1dp"
+        android:ems="10"
+        android:hint="enter command"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/execute"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <TextView
+        android:id="@+id/border"
+        android:layout_width="349dp"
+        android:layout_height="424dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginBottom="5dp"
+        android:background="#C0D1DF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/execute" />
+
+    <TextView
+        android:id="@+id/ssh_console"
+        android:layout_width="336dp"
+        android:layout_height="387dp"
+        android:background="#21284E"
+        android:textAlignment="viewStart"
+        android:textColor="#FFEB3B"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.953" />
+
+    <Button
+        android:id="@+id/execute"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:background="#673AB7"
+        android:text="Execute"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/runcommand" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="123dp"
+        android:layout_height="21dp"
+        android:text="CONSOLE"
+        android:textAlignment="center"
+        android:textColor="#3A3838"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/ssh_console"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/runcommand"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="59dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="11dp"
+        android:src="@drawable/command_icon"
+        app:layout_constraintBottom_toTopOf="@+id/execute"
+        app:layout_constraintEnd_toStartOf="@+id/runcommand"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

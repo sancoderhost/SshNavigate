@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Power">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            android:id="@+id/powerbutton"
+            android:layout_width="163dp"
+            android:layout_height="145dp"
+            android:layout_marginStart="127dp"
+            android:layout_marginEnd="121dp"
+            android:background="#00FFFFFF"
+            android:src="@drawable/power_off_icon"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.107" />
+
+        <ImageButton
+            android:id="@+id/restartbutton"
+
+            android:layout_width="165dp"
+            android:layout_height="138dp"
+            android:layout_marginStart="123dp"
+            android:layout_marginEnd="123dp"
+            android:background="#00FFFFFF"
+            android:src="@drawable/restart_new"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.462" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="58dp"
+            android:layout_height="22dp"
+            android:layout_marginStart="176dp"
+            android:layout_marginEnd="177dp"
+            android:layout_marginBottom="317dp"
+            android:text="Restart"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/restartbutton"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="58dp"
+            android:layout_height="22dp"
+            android:layout_marginStart="76dp"
+            android:layout_marginBottom="83dp"
+            android:text="Signout"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/killall_button" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="70dp"
+            android:layout_height="22dp"
+            android:layout_marginStart="136dp"
+            android:layout_marginEnd="83dp"
+            android:layout_marginBottom="83dp"
+            android:text="hibernate"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView13"
+            app:layout_constraintTop_toBottomOf="@+id/hibernate_button" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="176dp"
+            android:layout_marginEnd="177dp"
+            android:layout_marginBottom="47dp"
+            android:text="Poweroff"
+            app:layout_constraintBottom_toTopOf="@+id/restartbutton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/powerbutton" />
+
+        <ImageButton
+            android:id="@+id/hibernate_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="73dp"
+            android:layout_marginEnd="37dp"
+            android:layout_marginBottom="106dp"
+            android:background="#00FFFFFF"
+            android:src="@drawable/hibernate_icon"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/restartbutton" />
+
+        <ImageButton
+            android:id="@+id/killall_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="73dp"
+            android:layout_marginEnd="58dp"
+            android:layout_marginBottom="106dp"
+            android:background="#00FFFFFF"
+            android:src="@drawable/signout"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/hibernate_button"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/restartbutton" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
